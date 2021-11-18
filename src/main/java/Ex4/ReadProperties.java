@@ -1,4 +1,4 @@
-package Ex3;
+package Ex4;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -20,7 +20,7 @@ public class ReadProperties {
         String value = null;
         Properties properties = new Properties();
         try {
-            properties.load(new FileReader("src/main/resources/ex3.properties"));
+            properties.load(new FileReader("src/main/resources/ex4.properties"));
             value = properties.getProperty(key);
         } catch (IOException e) {
             e.printStackTrace();

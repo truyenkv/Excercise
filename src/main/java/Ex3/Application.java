@@ -8,7 +8,7 @@ import com.google.inject.name.Names;
 public class Application {
     public static void main(String[] args) {
         ReadProperties properties = ReadProperties.getInstance();
-        String value = properties.readPro();
+        String value = properties.readPro("log");
 
         LogModule logModule = new LogModule();
         Injector inject = Guice.createInjector(logModule);
